@@ -1,18 +1,14 @@
 import React from 'react'
 
-const Menu_Eng = ({items, langId}) => {
+const MenuEng = ({items, langId}) => {
     return (
         <div className="section-center">
             {items.map((item) => {
-                const { id, title, title_rus, title_eng, title_geo, img, desc, desc_rus, desc_geo, price } = item;
+                const { id, title, title_rus, title_geo, img, desc, desc_rus, desc_geo, price } = item;
                 return (
                     <article key={id} className="menu-item">
                         <img src={img} 
-                        alt=
-                        {langId === "eng" ? title : 
-                         langId === "rus" ? title_rus : 
-                         langId === "geo" ? title_geo : (null)
-                        } 
+                        alt={title}
                         className='photo' />
                         <div className="item-info">
                             <header>
@@ -43,4 +39,4 @@ const Menu_Eng = ({items, langId}) => {
 }
 
 
-export default Menu_Eng
+export default MenuEng

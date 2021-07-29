@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { gsap, Expo} from 'gsap';
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import Menu_Eng from "./Menu";
+import MenuEng from "./Menu";
 import Categories from "./Categories";
 import items from "./data"
 import logo from "./logo.jpg"
@@ -127,7 +127,7 @@ function App() {
           </div>
         <Categories categories={categories} activeCategory={activeCategory}
         filterItems={filterItems} langId={langId}/>
-        <Menu_Eng items={menuItems} langId={langId}/>
+        <MenuEng items={menuItems} langId={langId}/>
 
       </section>
       <div className="credit_container">
